@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+input {
+    display: none;
+}
+a, label{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+/* ------------------MENU - TOP------------------------------- */
+
+header {
+    position: fixed;
+    height: 60px;
+    width: 100vw;
+    background-color: #070707;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tete-perdu {
+    height: 100%;
+    width: 240px;
+    background-color: black;
+}
+
+.tete {
+    display: flex;
+    height: 100%;
+    width: calc(100vw - 240px);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tete .fleches {
+    margin: 0 20px;
+}
+.tete .fleches svg {
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.tete .infoo {
+    margin-right: 20px;
+}
+
+.tete .infoo a {
+margin: 0 10px;
+}
+
+.tete .infoo a:nth-child(1) {
+    border: solid 1px white ;
+    padding: 5px 15px;
+    border-radius: 50px;
+    background-color: black;
+}
+
+.tete .infoo a:nth-child(2) {
+    position: relative;
+    border: solid 1px black ;
+    padding: 5px 35px;
+    border-radius: 50px;
+    background-color: black;
+}
+
+.tete .infoo a:nth-child(2)::before {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 28px;
+    top: 0;
+    left: 0;
+    background-color: #282828;
+    border-radius: 50%;
+}
+
+/* ------------------MENU - LEFT------------------------------- */
+
+
+.menu-left {
+    position: fixed;
+    height: 100vh;
+    width: 210px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 0 0 30px;
+}
+
+.menus a, label {
+    padding: 5px 0px;
+}
+
+.menu-left .menus {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.menu-left .menus .logo {
+    position: absolute;
+    top: 20px;
+    height: 80px;
+    width: 100%;
+}
+
+.menu-left .menus .logo svg {
+    height: 40px;
+    color: white;
+    z-index: 10;
+}
+
+
+.menu-left .menus .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-left .menus .info .svvg {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.menu-left .menus .info label{
+margin-left: 15px;
+}
+
+.menu-left .menus .info1 svg:nth-child(1){
+    position: absolute;
+}
+
+#accueil:not(:checked) ~ body > div.menu-left > div > div.info > div.info1.svvg > svg.Svg-ytk21e-0.jAKAlG.home-active-icon {
+display: none;
+}
+
+.menu-left .menus .info svg {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+}
+
+.menu-left .menus .menu-end {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.menu-left .menus .menu-end .svvg {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.menu-left .menus .menu-end svg {
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.menu-left .menus .menu-end a {
+    margin-left: 15px;
+}
+
+.menu-left .menus .menu-end2 svg {
+    background: linear-gradient(to bottom right, rgb(110, 0, 153), rgb(131, 226, 255)
+    );
+}
+
+.menu-left .menus .menu-end2{
+    position: relative;
+}
+
+.menu-left .menus .menu-end2::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 200px;
+    background-color: #6b6b6b;
+    right: 20px;
+    bottom: -20px;
+}
+
+.menu-left .instal {
+    transform: translateY(-190px);
+}
+
+/* ------------------  BODY  ------------------------------- */
+
+.corps {
+    position: absolute;
+    height: calc(100% - 25px);
+    width: calc(100vw - 240px);
+    background-color: #2b2b2b;
+    top: 60px;
+    right: 0;
+    z-index: -1;
+}
+
+h3 {
+  color: white;  
+  font-size: 25px;
+}
+
+.corps .div-row {
+    height: 380px;
+    width: 100vw;
+    background-color: #222222;
+    padding: 30px;
+}
+
+.corps .div-row .musiques {
+    display: flex;
+    margin: 75px 0;
+}
+
+.corps .div-row .musiques .case {
+    height: 250px;
+    width: 180px;
+    background-color: #353535;
+    border-radius: 5px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.corps .div-row .musiques .case .image-music {
+    height: 150px;
+    width: 150px;
+    background-color: antiquewhite;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.corps .div-row .musiques .case .one {
+    background-image: url(/Images/cover2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.corps .div-row .musiques .case h4 {
+    margin: 10px;
+    
+}
+
+.corps .div-row .musiques .case .one
+
+.corps .div-row .artistes .case .image-music {
+border-radius: 50%;
+}
+
+/* ------------------  LECTEUR  ------------------------------- */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100vw;
+    background-color: #353535;
+    border-top: solid .1px #6b6b6b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* BLOCK 1 */
+
+footer .lecture-musique {
+    height: 100%;
+    width: 28%;
+    display: flex;
+    align-items: center;
+}
+
+footer .lecture-musique .image {
+height: 70px;
+width: 70px;
+background-color: antiquewhite;
+margin: 0 15px;
+}
+
+footer .lecture-musique .infos {
+    color: white;
+    font-size: 25px;
+    width: 60%;
+}
+
+footer .lecture-musique .infos p{
+font-size: 15px;
+}
+
+footer .lecture-musique .logos {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+footer .lecture-musique .logos svg {
+    margin: 0 10px;
+}
+
+/* BLOCK 2 */
+
+footer .commandes-musiques {
+    height: 100%;
+    width: 40%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .commandes-musiques .bouton-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+footer .commandes-musiques .bouton-up div {
+    padding: 0 10px;
+}
+
+footer .commandes-musiques .bouton-up .play svg{
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+
+}
+
+footer .commandes-musiques .bar-down {
+    height: 30px;
+    width: 100px;
+}
+
+/* BLOCK 3 */
+
+footer .commandes-volumes {
+    height: 100%;
+    width: 28%;
+}
